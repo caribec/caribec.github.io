@@ -9,3 +9,31 @@ main { max-width: 1000px; margin: 0 auto; padding: 24px 16px; }
 section { padding: 48px 0; border-bottom: 1px solid #eee; }
 #hero h1 { font-size: 2.2rem; margin: 0 0 8px; }
 @media (max-width: 640px) { #hero h1 { font-size: 1.8rem; } }
+
+/* 1) Add vertical space between the two cards */
+.projects {
+  display: grid;      /* keep if you already set it */
+  gap: 32px;          /* increase space between cards (try 32–48px) */
+}
+
+/* 2) Give the link row inside each card some breathing room */
+.card .content > div {
+  margin-top: 12px;   /* space above the Repo/My Commits/Branch links */
+}
+
+/* 3) Ensure the first card has padding at the bottom so it doesn't visually crowd */
+.card .content {
+  padding-bottom: 16px;
+}
+
+/* 4) (Optional) Extra nudge only if still too close */
+.projects .card:nth-of-type(2) {
+  margin-top: 12px;   /* remove if gap is enough */
+}
+
+/* 5) (Optional) Space out each tag chip/link */
+.tag {
+  display: inline-block;
+  margin: 4px 8px 0 0;  /* adds a little spacing between tags */
+}
+
