@@ -1,39 +1,45 @@
+html {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+               Consolas, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
+  line-height: 1.6;
+}
+
+/* Dark base */
+:root { color-scheme: dark; }
+
+html, body {
+  background: #121212;   /* dark */
+  color: #ffffff;        /* white text */
+  margin: 0;
+}
+
+/* Links */
+a { color: hsl(203, 100%, 77%); }
+a:hover { opacity: 0.9; }
+
+/* Muted text + Cards */
+.muted { color: #d6d6d6; }
+.card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 12px; }
+
+/* Header / Nav */
 * { box-sizing: border-box; }
-body { margin: 0; font-family: system-ui, Arial, sans-serif; line-height: 1.5; }
 header { position: sticky; top: 0; background: #111; }
 nav { max-width: 1000px; margin: 0 auto; padding: 12px 16px; display: flex; gap: 16px; }
 nav a { color: #fff; text-decoration: none; opacity: .9; }
-nav a:hover { opacity: 1; }
+nav a:hover { opacity: 1; text-decoration: underline; }
 
+/* Layout */
 main { max-width: 1000px; margin: 0 auto; padding: 24px 16px; }
-section { padding: 48px 0; border-bottom: 1px solid #eee; }
+section { padding: 48px 0; border-bottom: 1px solid rgba(255,255,255,0.08); } /* softer on dark */
 #hero h1 { font-size: 2.2rem; margin: 0 0 8px; }
 @media (max-width: 640px) { #hero h1 { font-size: 1.8rem; } }
 
-/* 1) Add vertical space between the two cards */
-.projects {
-  display: grid;      /* keep if you already set it */
-  gap: 32px;          /* increase space between cards (try 32–48px) */
-}
+/* Projects grid */
+.projects { display: grid; gap: 32px; }
+.card .content { padding-bottom: 16px; }
+.card .content > div { margin-top: 12px; }
+.projects .card:nth-of-type(2) { margin-top: 12px; }
 
-/* 2) Give the link row inside each card some breathing room */
-.card .content > div {
-  margin-top: 12px;   /* space above the Repo/My Commits/Branch links */
-}
 
-/* 3) Ensure the first card has padding at the bottom so it doesn't visually crowd */
-.card .content {
-  padding-bottom: 16px;
-}
-
-/* 4) (Optional) Extra nudge only if still too close */
-.projects .card:nth-of-type(2) {
-  margin-top: 12px;   /* remove if gap is enough */
-}
-
-/* 5) (Optional) Space out each tag chip/link */
-.tag {
-  display: inline-block;
-  margin: 4px 8px 0 0;  /* adds a little spacing between tags */
-}
+:where(button, input, select, textarea) { font: inherit; }
 

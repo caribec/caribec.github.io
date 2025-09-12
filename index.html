@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Carissa's Portfolio</title>
@@ -24,11 +25,13 @@
   <!-- ABOUT -->
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a Computer Science student at the University of Houston with a concentration in Software Design.</p>
+    <p>I'm currently in my final year studying Computer Science with a concentration in Software Design at the <span style="color: red;">University of Houston.</span> </p>
     <p class="muted reveal" style="margin-bottom:16px">
       I have wide-ranging interests and I like connecting them. Visual arts shape how I approach layout and color;
       web design lets me bring ideas to life; and cybersecurity keeps me thinking about safe-by-default choices.
       Above all, I enjoy building web experiences that help people.
+
+
     </p>
   </section>
 
@@ -36,9 +39,23 @@
   <section id="projects">
     <h2>Projects</h2>
 
-    <!-- Optional parent layout wrapper -->
+    
     <div class="projects grid">
-      <!-- Project 1 -->
+      <!--Project 1-->
+      <article class="card reveal">
+        <div class="thumb" style="background-image:url('assets/img/vms-thumb.png');background-size:cover;background-position:center;"></div>
+        <div class="content">
+          <h3 style="margin:0 0 6px">WeatherGetBetter</h3>
+          <p class="muted">
+            Currently Building a iOS app that shows current, hourly, and 7-day forecasts with location-based weather, city search + favorites.
+            It performs REST API calls (GET) to a third-party weather service to fetch JSON for conditions and forecasts, implemented with Swift/SwiftUI using MVVM
+          </p>
+          <div>
+            
+          </div>
+        </div>
+      </article>
+      <!-- Project 2 -->
       <article class="card reveal">
         <div class="thumb" style="background-image:url('assets/img/vms-thumb.png');background-size:cover;background-position:center;"></div>
         <div class="content">
@@ -56,7 +73,7 @@
         </div>
       </article>
 
-      <!-- Project 2 -->
+      <!-- Project 3 -->
       <article class="card reveal">
         <div class="thumb" style="background-image:url('assets/img/portfolio-thumb.png');background-size:cover;background-position:center;"></div>
         <div class="content">
