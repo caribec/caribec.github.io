@@ -6,10 +6,10 @@ Visit → **[caribec.github.io](https://caribec.github.io)**
   <a href="https://caribec.github.io">
     <img alt="Live Site" src="https://img.shields.io/badge/Live%20Site-Visit-0A0?style=for-the-badge">
   </a>
-  <a href="https://www.linkedin.com/in/your-link/">
+  <a href="https://www.linkedin.com/in/carissab1/">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>
-  <a href="mailto:your.email@example.com">
+  <a href="mailto:carissabecerra01@yahoo.com">
     <img alt="Email" src="https://img.shields.io/badge/Email-Contact-EE4B2B?style=for-the-badge">
   </a>
 </p>
